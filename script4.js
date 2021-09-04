@@ -106,7 +106,7 @@ function resetBoard(rodName) {
 function storeWin(rod, score) {
 
     if (score -1> maxScore) {
-        maxScore = score;
+        maxScore = score-1;
         maxname=y;
         localStorage.setItem(storeName, maxname);
         localStorage.setItem(storeScore, maxScore);
