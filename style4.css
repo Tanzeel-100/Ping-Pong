@@ -1,0 +1,111 @@
+/* body {
+    background-image: linear-gradient(250deg,white 10%,gray 30%, black 80%);
+} */
+body, html{
+    height: 100%;
+}
+
+body{
+    /* Full height */
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-image: url("Dark_background.jpg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+#ball {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: fixed;
+    top: 20px;
+    left: 52.5%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.rod{
+    width: 200px;
+    height: 20px;
+    position: fixed;
+    left: 50%;
+    border-radius: 25px;
+    text-align: center;
+    background-color: rgb(79, 107, 107);
+    font-weight: bold;
+}
+
+#start{
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+#rod1 {
+    top: 0px;    
+}
+
+#rod2 {
+    bottom: 0px;
+}
+
+#lower{
+    margin-top: -5%;
+    height: 150px;
+    width: 60%; 
+    background-color: transparent;
+    margin-left: 80%;
+    /* border: 1px solid black; */
+}
+
+#top-border{
+    height: 12%;
+    width: 10.8%;
+    /* background-color: rgb(117, 17, 17); */
+    background-image: linear-gradient(150deg,white,black);
+    margin-bottom: 0%;
+}
+
+#top-border p{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(20, 20, 20);
+}
+
+.counter p{
+    text-align: center;
+    line-height: 90px;
+    font-size: 2.5rem;
+    height: 100%;
+    margin: 0px;
+    width: 100%;
+    /* background-color: rgb(165, 151, 129); */
+    background-image: linear-gradient(60deg,black,white);
+    border-top: 2px solid black;
+}
+
+p.nxt{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top: 120px;
+}
+
+p.animate{
+    transition: all 0.5s;
+    top: 0px;
+}
+
+.counter{
+    overflow: hidden;
+    height: 100px;
+    width: 100px;
+    margin-top: 4px;
+    position: relative;
+}
